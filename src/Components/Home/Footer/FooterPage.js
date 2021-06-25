@@ -1,15 +1,49 @@
 import React from 'react';
-import logo from '../../../images/navbarLogo.png'
+import logo from '../../../images/navbarLogo.png';
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+
+
+
+
 
 const FooterPage = () => {
   return (
-    <div>
-      <div className="container">
-          <div className="text-center">
-            <img style={{height:'300px'}} src={logo} alt=""/>
-            <h3 className="display-5 text-white"><b>GYM HERO</b></h3>
+    <div className="text-light">
+      <MDBFooter color="blue" className="font-small pt-4 mt-4">
+      <MDBContainer fluid className="text-center text-md-left">
+        <MDBRow>
+          <MDBCol md="6">
+            <h5 className="title">GYM HERO</h5>
+            <div className="text-center">
+            <img style={{height:'100px'}} src={logo} alt=""/>
             </div>
-        </div>
+          </MDBCol>
+          <MDBCol md="6">
+            <h5 className="title">Contact Us</h5>
+            <ul>
+              <li className="list-unstyled">
+                <a className="text-light" href="#!">+880153434345</a>
+              </li>
+              <li className="list-unstyled">
+                <a className="text-light" href="#!">gymHero12@gmail.com</a>
+              </li>
+              <li className="list-unstyled">
+                <a className="text-light" href="#!">Youtube</a>
+              </li>
+              <li className="list-unstyled">
+                <a className="text-light" href="#!">Instagram</a>
+              </li>
+            </ul>
+          </MDBCol>
+        </MDBRow>
+      </MDBContainer>
+      <div className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright: <a style={{textDecoration:'none'}} className="text-white" href=" https://gym-hero2.web.app/">A M Fahim</a>
+        </MDBContainer>
+      </div>
+    </MDBFooter>
+     
       </div>
   );
 };

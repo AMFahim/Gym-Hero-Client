@@ -45,7 +45,7 @@ const Login = () => {
   }
   return (
     <div>
-      <div style={{height:'700px'}} className="text-center bg-dark">
+      <div style={{height:'700px', paddingTop:'200px'}} className="text-center bg-dark">
         <br />
         <button className="btn btn-outline-success" onClick={handleGoogleSignIn}>
          Continue with Google

@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Home/Navbar/Navbar';
 import Services from '../Home/Services/Services';
 import Trainer from '../Home/Trainer/Trainer';
+import FooterPage from '../Home/Footer/FooterPage';
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
       <Navbar/>
       <Services/>
       <Trainer/>
+      <FooterPage/>
     </div>
   );
 };

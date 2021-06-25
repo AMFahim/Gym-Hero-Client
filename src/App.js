@@ -12,9 +12,9 @@ import OurService from './Components/OurService/OurService';
 import Trainer from './Components/Home/Trainer/Trainer';
 import { useState } from 'react';
 import NoMatch from './Components/NoMatch/NoMatch';
-// import Login from './Components/Login/Login/Login';
 import Login from './Components/Login/Login/Login';
 // import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+import ContactUs from './Components/ContactUs/ContactUs';
 
 export const UserContext = createContext();
 
@@ -45,6 +45,9 @@ const App = () => {
           </Route>
           <Route path="/login">
             <Login/>
+          </Route>
+          <Route path="/contactUs">
+            <ContactUs/>
           </Route>
           <Route path="*">
             <NoMatch/>

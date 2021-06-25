@@ -29,7 +29,7 @@ const Navbar = () => {
           <Link to="/team" className="nav-link text-white"><h5>Our Team</h5></Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-white"><h5>Contact Us</h5></Link>
+          <Link to="/contactUs" className="nav-link text-white"><h5>Contact Us</h5></Link>
         </li>
       </ul>
     </div>
