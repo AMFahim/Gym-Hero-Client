@@ -1,0 +1,15 @@
+.header-container{
+  background-image: url(../../../images/damir-spanic-DBk90-e61Hw-unsplash.jpg);
+  /* background-color: #cccccc;  */
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -175px;
+}
+.text-color{
+  color: rgb(226, 93, 78);
+}
+.btn-brand{
+  color: linear-gradient(75deg rgb(218, 117, 106) rgb(224, 60, 42));
+}
