@@ -28,7 +28,7 @@ const FooterPage = () => {
                 <a className="text-light" href="#!">gymHero12@gmail.com</a>
               </li>
               <li className="list-unstyled">
-                <a className="text-light" href="#!">Youtube</a>
+                <a className="text-light" href="#!">Linked In</a>
               </li>
               <li className="list-unstyled">
                 <a className="text-light" href="#!">Instagram</a>

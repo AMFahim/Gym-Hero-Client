@@ -13,11 +13,10 @@ Live site:- https://gym-hero2.web.app/
 <li>Firebase</li>
 </ul>
 
-*
-*
-*
-*
-*
 
-
-
+## Project Screenshot:-
+<img src ="./src/images/screenShot/home.png"/>
+<br/>
+<img src ="./src/images/screenShot/about.png"/>
+<br/>
+<img src ="./src/images/screenShot/services.png"/>
