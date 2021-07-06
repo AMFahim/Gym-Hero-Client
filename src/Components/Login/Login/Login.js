@@ -18,10 +18,19 @@ if (!firebase.apps.length) {
 }
 
 const Login = () => {
+
   const [loggedInUser, setLoggedInUser] = useContext(UserContext)
   const history = useHistory();
   const location = useLocation();
   const { from } = location.state || { from: { pathname: "/" } };
+
+  const [user, setUser] = useState({
+    isSignIn: false,
+    name: '',
+    email: '',
+    password: '',
+    photo: ''
+  })
 
   var provider = new firebase.auth.GoogleAuthProvider();
 
@@ -29,8 +38,14 @@ const Login = () => {
     firebase.auth()
       .signInWithPopup(provider)
       .then((result) => {
-        const { displayName, email } = result.user;
-        const signedInUser = { name: displayName, email }
+        console.log(result)
+        const { displayName, email, photoURL } = result.user;
+        const signedInUser = {
+         isSignIn: true,
+         name: displayName, 
+         email: email,
+         photo: photoURL
+        }
         setLoggedInUser(signedInUser);
         history.replace(from)
       }).catch((error) => {
@@ -42,10 +57,12 @@ const Login = () => {
 
 
   }
+
   return (
     <div>
       <div style={{height:'700px', paddingTop:'200px'}} className="text-center bg-dark">
         <br />
+
         <button className="btn btn-outline-success p-2" onClick={handleGoogleSignIn}>
         <FontAwesomeIcon icon={faGoogle} /> Continue with Google
         </button>

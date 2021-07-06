@@ -1,3 +1,16 @@
+.hover-effect{
+  color: white;
+}
+
 .hover-effect:hover{
+  color: rgb(204, 67, 52);
+}
+
+.hover-effect:focus{
 color: rgb(204, 67, 52)
+}
+
+.photo-url{
+  height: 30px;
+  border-radius: 40px;
 }
