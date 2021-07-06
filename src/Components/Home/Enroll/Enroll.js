@@ -25,7 +25,7 @@ const Enroll = () => {
            </small>
            <br/>
            <br/>
-           <Link to='/login'><button className="btn btn-outline-danger">ENROLL NOW</button></Link>
+           <Link to='/registration'><button className="btn btn-outline-danger">ENROLL NOW</button></Link>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ const Enroll = () => {
            </small>
            <br/>
            <br/>
-           <Link to='/login'><button className="btn btn-outline-danger">ENROLL NOW</button></Link>
+           <Link to='/registration'><button className="btn btn-outline-danger">ENROLL NOW</button></Link>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ const Enroll = () => {
            </small>
            <br/>
            <br/>
-           <Link to='/login'><button className="btn btn-outline-danger">ENROLL NOW</button></Link>
+           <Link to='/registration'><button className="btn btn-outline-danger">ENROLL NOW</button></Link>
             </div>
           </div>
         </div>

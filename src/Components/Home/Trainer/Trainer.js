@@ -6,7 +6,7 @@ import trainer3 from '../../../images/trainer3.jpg';
 const Trainer = () => {
   return (
     <div className="bg-dark pt-5">
-     <div>
+     <div className="text-center">
        <h5 style={{color:'rgb(204, 67, 52)'}}>OUR TEAM</h5>
        <h4 className="text-white display-5"><b>TRAIN WITH EXPERTS</b></h4>
      </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import pushUps from '../../../images/pushUps.jpg'
 
 const Registration = () => {
@@ -13,7 +14,7 @@ const Registration = () => {
           <br />
           <h1 className="card-title text-center">REGISTRATION NOW TO GET MORE DEALS</h1>
           <h3 className='text-center'>WHERE HEALTH, BEAUTY AND FITNESS MEET.</h3>
-          <button style={{ justifyContent: 'center', marginLeft: '550px' }} className="btn btn-outline-warning text-center">APPOINTMENT</button>
+          <Link to="/registration"><button style={{ justifyContent: 'center',marginLeft: '550px' }} className="btn btn-outline-warning text-center">REGISTRATION</button></Link>
         </div>
       </div>
     </div>

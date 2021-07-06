@@ -13,8 +13,12 @@ import Trainer from './Components/Home/Trainer/Trainer';
 import { useState } from 'react';
 import NoMatch from './Components/NoMatch/NoMatch';
 import Login from './Components/Login/Login/Login';
-// import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 import ContactUs from './Components/ContactUs/ContactUs';
+import AdminUser from './Components/Dashboard/AdminUser/AdminUser';
+import Registration from './Components/Registration/Registration/Registration';
+import Review from './Components/User/Review/Review';
+import PrivetRoute from './Components/Login/PrivetRoute/PrivetRoute';
+
 
 export const UserContext = createContext();
 
@@ -49,6 +53,15 @@ const App = () => {
           <Route path="/contactUs">
             <ContactUs/>
           </Route>
+          <Route path="/adminUser">
+            <AdminUser/>
+          </Route>
+          <PrivetRoute path="/registration">
+            <Registration/>
+          </PrivetRoute>
+          <PrivetRoute path="/review">
+            <Review/>
+          </PrivetRoute>
           <Route path="*">
             <NoMatch/>
           </Route>

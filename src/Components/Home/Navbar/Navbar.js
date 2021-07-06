@@ -14,22 +14,28 @@ const Navbar = () => {
     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item">
-          <Link to="/" className="nav-link active text-white" aria-current="page" ><h5>Home</h5></Link>
+          <Link to="/" className="nav-link active text-white" aria-current="page" ><b>Home</b></Link>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-link text-white hover-effect"><h5>About Us</h5></Link>
+          <Link to="/about" className="nav-link text-white hover-effect"><b>About Us</b></Link>
         </li>
         <li className="nav-item">
-          <Link to="/classNames" className="nav-link text-white"><h5>classNames</h5></Link>
+          <Link to="/classNames" className="nav-link text-white"><b>classes</b></Link>
         </li>
         <li className="nav-item">
-          <Link to="/services" className="nav-link text-white"><h5>Services</h5></Link>
+          <Link to="/services" className="nav-link text-white"><b>Services</b></Link>
         </li>
         <li className="nav-item">
-          <Link to="/team" className="nav-link text-white"><h5>Our Team</h5></Link>
+          <Link to="/team" className="nav-link text-white"><b>Our Team</b></Link>
         </li>
         <li className="nav-item">
-          <Link to="/contactUs" className="nav-link text-white"><h5>Contact Us</h5></Link>
+          <Link to="/contactUs" className="nav-link text-white"><b>Contact Us</b></Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/review" className="nav-link text-white"><b>Review</b></Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/login" className="nav-link text-white"><button className="btn btn-outline-danger">Login</button></Link>
         </li>
       </ul>
     </div>

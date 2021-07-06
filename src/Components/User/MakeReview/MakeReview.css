@@ -1,0 +1,32 @@
+.comment {
+  width: 80%;
+  height: 150px;
+  padding: 10px;
+  background: none;
+  border: 2px solid #3498DB;
+  border-radius: 20px;
+  outline: none;
+}
+
+.comment:focus{
+  border: 2px solid #CB4335;
+}
+
+.for-padding{
+  padding-left: 40px;
+}
+
+.btn-style{
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  width: 100px;
+  border: 2px solid #3498DB;
+  border-radius: 30px;
+  background: none;
+}
+
+.btn-style:hover{
+  border: 2px solid #CB4335;
+  background: #CB4335
+}

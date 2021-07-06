@@ -4,8 +4,11 @@ import firebaseConfig from './firebase.config';
 import "firebase/auth";
 // import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router-dom';
-// import googleIcon from '../../images/google.png';
+// import googleIcon from '../../../images/google.png';
 import { UserContext } from '../../../App';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+
 
 
 if (!firebase.apps.length) {
@@ -28,16 +31,12 @@ const Login = () => {
       .then((result) => {
         const { displayName, email } = result.user;
         const signedInUser = { name: displayName, email }
-        var credential = result.credential;
-        var token = credential.accessToken;
-        var user = result.user;
         setLoggedInUser(signedInUser);
         history.replace(from)
       }).catch((error) => {
         var errorCode = error.code;
         var errorMessage = error.message;
         var email = error.email;
-        var credential = error.credential;
         console.log(errorCode, errorMessage, email);
       });
 
@@ -47,8 +46,8 @@ const Login = () => {
     <div>
       <div style={{height:'700px', paddingTop:'200px'}} className="text-center bg-dark">
         <br />
-        <button className="btn btn-outline-success" onClick={handleGoogleSignIn}>
-         Continue with Google
+        <button className="btn btn-outline-success p-2" onClick={handleGoogleSignIn}>
+        <FontAwesomeIcon icon={faGoogle} /> Continue with Google
         </button>
       </div>
     </div>
