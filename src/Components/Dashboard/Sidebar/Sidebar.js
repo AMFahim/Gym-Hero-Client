@@ -32,9 +32,9 @@ const Sidebar = (props) => {
      onClick: () => history.push('/')
     },
     {
-     text: "Customers",
+     text: "Clients",
      icon: <DashboardIcon/>,
-     onClick: () => history.push('/')
+     onClick: () => history.push('/clients')
     },
     {
       text: "Add Trainer",
@@ -42,19 +42,19 @@ const Sidebar = (props) => {
       onClick: () => history.push('/addTrainer')
     },
     {
-      text: "Edit classes",
+      text: "Manage classes",
       icon: <EditIcon/>,
       onClick: () => history.push('/editClasses')
     }
   ] 
   return (
     <MIUDrawer variant="permanent" className={classes.drawer}>
-    <List style={{backgroundColor:'rgba(212, 200, 131, 0.945)'}}>
+    <List className="text-white" style={{height:"600px", backgroundColor:'#34495E'}}>
          {itemsList.map((item, index) => {
            const {text, icon, onClick} = item;  
            return(
            <ListItem button key={text} onClick={onClick}>
-            { icon && <ListItemIcon>{icon}</ListItemIcon>}
+            { icon && <ListItemIcon className="text-white">{icon}</ListItemIcon>}
              <ListItemText primary={text} />
            </ListItem>
          )})}

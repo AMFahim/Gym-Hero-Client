@@ -17,7 +17,7 @@ const Registration = () => {
     gender: data.gender
   }
 
-    fetch('http://localhost:5000/addRegistration', {
+    fetch('https://desolate-hamlet-87652.herokuapp.com/addRegistration', {
       method: 'POST', 
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(clientData)

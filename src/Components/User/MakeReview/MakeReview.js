@@ -14,7 +14,7 @@ const MakeReview = () => {
     const clientFeedback = {
      comment: data.comment
     }
-    fetch('http://localhost:5500/addReview', {
+    fetch('https://pacific-wildwood-74021.herokuapp.com/addReview', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(clientFeedback)
@@ -33,7 +33,7 @@ const MakeReview = () => {
     <div className="for-padding">
       <h5>Please give your honest feedback</h5>
       <form onSubmit={handleSubmit(onSubmit)} >
-        <textarea className="comment text-light" placeholder="Write Here,,," cols="30" rows="10" {...register("comment")}></textarea>
+        <textarea className="comment text-light" placeholder="Write Here,,," cols="30" rows="10" {...register("comment")} required></textarea>
         <br />
         <input className="btn-style" type="submit" value="Submit" />
       </form>

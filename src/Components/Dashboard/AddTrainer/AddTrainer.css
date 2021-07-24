@@ -1,0 +1,22 @@
+.formStyle{
+  width: 300px;
+  height: 40px;
+  border-radius: 30px;
+}
+
+.formStyle:focus{
+  border: 2px solid #48C9B0;
+}
+
+.btnStyle{
+  height: 40px;
+  width: 80px;
+  border: 2px solid rgb(74, 146, 214);
+  border-radius: 30px;
+  background: none;
+}
+
+.btnStyle:hover{
+  border: 2px solid #48C9B0;
+  background: #48C9B0;
+}
