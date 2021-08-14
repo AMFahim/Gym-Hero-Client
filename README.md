@@ -9,7 +9,6 @@ Live site:- https://gym-hero2.web.app/
 <li>Bootstrap</li>
 <li>React Bootstrap</li>
 <li>Material UI</li>
-<li>React Router</li>
 <li>Firebase</li>
 </ul>
 
